@@ -86,9 +86,10 @@ ul li a:hover {
     font-size: 1.5rem;
 }
 
-.container {
+.container_azul {
     margin: auto;
-    width: 1200px;
+    max-width: 1200px;
+    height: 800px;
     background-color: #2E8FFF;
 }
 
@@ -97,18 +98,19 @@ ul li a:hover {
     justify-content: center;
 }
 
-.container_titulo h1 {
+.container_titulo h2 {
+    font-size: 30px;
     color: #FFF;
     text-transform: uppercase;
-    margin: 30px 0px 30px 0px;
+    margin: 50px 0px 30px 0px;
 }
 
 .box_beneficios {
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 40px;
 }
 
 .card {
@@ -118,17 +120,64 @@ ul li a:hover {
     background-image: linear-gradient(to bottom,  #c5defa, #ffffff);
     box-shadow: 6px 5px 4px rgba(0, 0, 0, 0.4);
     border-radius: 30px;
-    margin: 40px;
+    margin: 50px;
     height: 200px;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card img {
     width: 80px;
-    margin: 20px 0px 10px 0px;
+    margin: 20px 0px 0px 0px;
 }
 
 .card p {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
-    margin: 30px;
+    color: #082544;
+    margin: 20px;
+    text-align: center;
 }
+
+.container_branco {
+    margin: auto;
+    max-width: 1200px;
+    height: 800px;
+}
+
+.container_titulo_branco h2{
+    font-size: 30px;
+    color: var(--azul-padrao);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 50px 0px 30px 0px;
+}
+
+.planos {
+    display: flex;
+    justify-content: center;
+}
+
+.card_plano {
+    margin: 70px;
+    padding: 40px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.card_plano_nome {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--azul-padrao);
+}
+
+.plano_beneficios ul li {
+    list-style: none;
+}
+
+
+
