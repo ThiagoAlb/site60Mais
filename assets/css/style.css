@@ -14,6 +14,10 @@
     --cinza: #BCBBB6;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     margin: 0;
     padding: 0;
@@ -106,9 +110,9 @@ ul li a:hover {
 
 .box_beneficios {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 40px;
 }
 
@@ -144,7 +148,10 @@ ul li a:hover {
     margin: auto;
     max-width: 1200px;
     height: 800px;
-    
+}
+
+.extendido {
+    height: 1400px;
 }
 
 .container_titulo_branco h2{
@@ -248,3 +255,61 @@ ul li a:hover {
     transform: scale(1.05);
     transition: 0.5s;
 }
+
+.local_imagens {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 100px;
+    gap: 50px;
+}
+
+.local_imagens img {
+    max-width: 350px;
+}
+
+.local_imagens img:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.imagem_maior {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.imagem_maior img:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+} 
+
+.container_mapa {
+    margin: auto;
+    max-width: 1200px;
+    height: 650px;
+    background-color: #2E8FFF;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.mapa iframe {
+    border-radius: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 1200px;
+    height: 250px;
+    gap: 70px;
+}
+
+
