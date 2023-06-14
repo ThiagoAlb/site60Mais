@@ -29,6 +29,10 @@ header {
     height: 110px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container_header {
     display: flex;
     justify-content: space-around;
@@ -40,14 +44,27 @@ header {
     height: 100px; 
 }
 
-.menu {
+.menuTelaGrande {
     display: flex;
     gap: 30px;
     list-style: none;
 }
 
+.menuMobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.mm_line {
+    height: 3px;
+    background-color: #39aae1;
+}
+
 ul li a {
-    text-decoration: none;
     font-size: 0.90rem;
     font-weight: bold;
     color: #000;
@@ -246,7 +263,6 @@ ul li a:hover {
 .button_agendamento a {
     margin-top: 30px;
     padding: 10px;
-    text-decoration: none;
     color: #FFF;
     background-color: #25D366;
 }
@@ -306,10 +322,73 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     margin: auto;
-    max-width: 1200px;
-    height: 250px;
-    gap: 70px;
+    min-height: 200px;
+    gap: 100px;
+    background-color: #161515;
+    color: #FFF;
+}
+
+.footer_boxes {
+    min-width: 200px;
+    height: 50px;
+    margin-bottom: 60px;
+    
+}
+
+.footer_redes_sociais a{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: white;
+}
+
+.footer_redes_sociais p {
+    margin-left: 5px;
+}
+
+#footer_box_dias p {
+    margin-top: 10px;
+}
+
+#footer_box_horas {
+    margin-top: 20px;
+}
+
+#footer_contato_box {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#footer_contato_box p {
+    margin-left: 5px;
+}
+
+#footer_contato_box a{
+    color: #FFF;
+}
+
+#footer_endereco_box p{
+    margin-top: 10px;
 }
 
 
+@media (max-width: 740px) {
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+    
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
